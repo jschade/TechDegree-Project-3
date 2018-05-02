@@ -1,0 +1,30 @@
+
+
+/* ----------------------------------- BASIC SELECTORS ----*/
+
+* {
+	margin: 0;
+	text-align: center;
+}
+
+h1, h2, h3 {
+	font-family: 'Anton', sans-serif;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 2.5em;
+}
+
+p {
+	/*font-family: 'Open Sans Condensed', sans-serif;*/
+}
+
+
+
+
+.main-head {
+	background-color: #384847;
+	margin-top: 0 auto;
+	color: #fff;
+}
