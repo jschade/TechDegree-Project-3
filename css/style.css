@@ -2,29 +2,147 @@
 
 /* ----------------------------------- BASIC SELECTORS ----*/
 
+
+
 * {
 	margin: 0;
+}
+
+
+h1 {
+	font-family: 'Bungee', cursive;
+	text-transform: uppercase;
+}
+
+h2, h3, p, form {
+	font-family: 'Cabin', sans-serif;
+}
+
+
+
+
+/* ---------------------------------- CLASS SELECTORS ----*/
+
+
+
+.intro {
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.main-head {
+	background: #5C4A72;
+	color: #fff;
+	text-align: center;
+	padding: 1px;
+	text-shadow: 3px 3px 2px #333;
+}
+
+.form-container {
+	width: 90%;
+	margin: auto;
+}
+.main-footer {
 	text-align: center;
 }
 
-h1, h2, h3 {
-	font-family: 'Anton', sans-serif;
+
+
+/* ------------------------------------- FORM DESIGN ----*/
+
+
+
+input,
+textarea,
+select {
+	width: 100%;
+	background: #ebebeb;
+	border: 1px solid #bbb;
+	border-radius: 10px;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-top: 2px;
 }
 
-h1 {
+fieldset {
+	border: 0;
+}
+
+legend {
+	font-size: 1.5em;
+	margin-bottom: 15px;
+}
+
+input {
+	height: 40px;
+	margin-bottom: 10px;
+}
+
+label {
+	display: inline-block;
+	padding-top: 10px;
+	color: #5C4A72;
+	vertical-align: middle;
+	margin-bottom: 0;
+}
+
+select {
+	height: 40px;
+}
+
+textarea {
+	height: 100px;
+
+}
+
+
+.button {
+	font-size: 1.5em;
+	color: white;
 	text-transform: uppercase;
-	font-size: 2.5em;
+	height: 65px;
+	background: linear-gradient(#C5B3F9, #5C4A72);
+	border-radius: 10px;
+	cursor: pointer;
 }
 
-p {
-	/*font-family: 'Open Sans Condensed', sans-serif;*/
+.button:hover {
+	text-shadow: 3px 3px 2px #333;
+	background: radial-gradient(#5C4A72, #C5B3F9);	
+}
+
+#zipcode {
+	width: 25%;
 }
 
 
 
 
-.main-head {
-	background-color: #384847;
-	margin-top: 0 auto;
-	color: #fff;
+/* ------------------------------------- MEDIA QUERIES ----*/
+
+
+
+@media (min-width: 768px) {
+
+	.form-container {
+		width: 60%;
+	}
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
