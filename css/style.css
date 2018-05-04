@@ -6,6 +6,7 @@
 
 * {
 	margin: 0;
+	box-sizing: border-box;
 }
 
 
@@ -38,7 +39,7 @@ h2, h3, p, form {
 	color: #fff;
 	text-align: center;
 	padding: 1px;
-	text-shadow: 3px 3px 2px #333;
+	text-shadow: 2px 2px 1px #333;
 }
 
 .form-container {
@@ -46,6 +47,7 @@ h2, h3, p, form {
 	margin: auto;
 }
 .main-footer {
+	height: 100px;
 	text-align: center;
 }
 
@@ -55,9 +57,9 @@ h2, h3, p, form {
 
 
 
-input,
-textarea,
-select {
+.first-fieldset input,
+	textarea,
+	select {
 	width: 100%;
 	background: #ebebeb;
 	border: 1px solid #bbb;
@@ -73,7 +75,7 @@ fieldset {
 
 legend {
 	font-size: 1.5em;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 }
 
 input {
@@ -84,7 +86,7 @@ input {
 label {
 	display: inline-block;
 	padding-top: 10px;
-	color: #5C4A72;
+	color: #612378;
 	vertical-align: middle;
 	margin-bottom: 0;
 }
@@ -98,8 +100,58 @@ textarea {
 
 }
 
+.first-fieldset {
+	padding-bottom: 40px;
+}
+
+.checkbox input,
+.checkbox label {
+
+  	display:  inline-block;
+  	margin-bottom: 0;
+  	vertical-align: middle; 
+  	width: 60px;
+}
+
+.radio input,
+.radio label {
+	display: block;
+  	margin-bottom: -15px;
+  	vertical-align: middle;
+}
+
+.radio label {
+	position: relative;
+	right: -62px;
+	bottom: 25px;
+}
+
+.second-fieldset label {
+	font-size: .8em;
+	width: 50%;
+	margin-left: -40px;
+	margin-top: 3px;
+	vertical-align: top;
+}
+
+.topics-label {
+	position: relative;
+	left: 40px;
+}
+
+.first-fieldset input:focus,
+select:focus {
+	outline: none;
+	box-shadow: 0px 0px 10px #C5B3F9;
+}
+
+.second-fieldset textarea:focus {
+	outline: none;
+	box-shadow: 0px 0px 10px #C5B3F9;
+}
 
 .button {
+	width: 100%;
 	font-size: 1.5em;
 	color: white;
 	text-transform: uppercase;
@@ -107,11 +159,12 @@ textarea {
 	background: linear-gradient(#C5B3F9, #5C4A72);
 	border-radius: 10px;
 	cursor: pointer;
+	text-shadow: 1px 1px 1px #333;
 }
 
 .button:hover {
-	text-shadow: 3px 3px 2px #333;
-	background: radial-gradient(#5C4A72, #C5B3F9);	
+	
+	background: #C5B3F9;
 }
 
 #zipcode {
@@ -129,6 +182,10 @@ textarea {
 
 	.form-container {
 		width: 60%;
+	}
+
+	label {
+		
 	}
 
 

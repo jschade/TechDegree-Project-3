@@ -25,7 +25,7 @@
  	</header>
 
  	<div class="intro">
- 		<h2>Sign Up for our Newsletter</h2><br>
+ 		<h2>Sign up for our newsletter</h2><br>
  		<p>Get the latest news on how your code is doing right in your inbox</p>
 
  	</div>
@@ -36,18 +36,18 @@
 
 <!-- CONTACT INFORMATION FIELDSET -->
 
-		<fieldset>
+		<fieldset class="first-fieldset">
 
 			<legend>Contact Information</legend>
 
 			<label for="name">Full Name</label><br>
-			<input type="text" id="name" placeholder="Required" name="user_name"><br>
+			<input type="text" id="name" placeholder="Required" name="user_name" required><br>
 
 			<label for="email">E-Mail Address</label><br>
-			<input type="email" id="email" placeholder="Required" name="user_email"><br>
+			<input type="email" id="email" placeholder="Required" name="user_email" required><br>
 
 			<label for="phonenumber">Phone Number</label><br>
-			<input type="tel" id="phonenumber" name="user_phonenumber"><br>
+			<input type="tel" id="phonenumber" placeholder="Required" name="user_phonenumber" required><br>
 
 			<label for="address">Street Address</label><br>
 			<input type="text" id="address" name="user_address"><br>
@@ -58,6 +58,7 @@
 			<label for="state">State</label>
 			<select id="state" name="user_state">
 
+				<option value="" disabled selected>Select your State</option>
 				<option value="AL">Alabama</option>
 				<option value="AK">Alaska</option>
 				<option value="AZ">Arizona</option>
@@ -113,37 +114,45 @@
 			</select><br><br>
 
 			<label for="zipcode">Zip Code</label><br>
-			<input type="text" id="zipcode" name="user_zipcode"><br>
+			<input type="text" id="zipcode" name="user_zipcode" placeholder="5 Digit Zip Code"><br>
 
 		</fieldset>
 
 <!-- NEWSLETTER FIELDSET -->
 
-		<fieldset>
+		<fieldset class="second-fieldset">
 
 			<legend>Newsletter</legend>
 
-			<p>Select the Newsletters you would like to recieve</p>
+			<p>Select the Newsletters you would like to recieve</p><br>
 
-			<input type="checkbox" id="html-news" name="user_html_news">
-			<label for="html-news">HTML News</label><br>
+			<div class="checkbox">
 
-			<input type="checkbox" id="css-news" name="user_css_news">
-			<label for="css-news">CSS News</label><br>
+				<input type="checkbox" id="html-news" name="user_html_news">
+				<label for="html-news">HTML News</label><br>
 
-			<input type="checkbox" id="js-news" name="user_js_news">
-			<label for="js-news">JavaScript News</label><br>
+				<input type="checkbox" id="css-news" name="user_css_news">
+				<label for="css-news">CSS News</label><br>
 
-			<p>Newsletter Format</p>
+				<input type="checkbox" id="js-news" name="user_js_news">
+				<label for="js-news">JavaScript News</label><br><br>
 
-			<input type="radio" id="html" name="user_format">
-			<label for="html">HTML</label>
+			</div>
 
-			<input type="radio" id="plaintext" name="user_format">
-			<label for="plaintext">Plain Text</label><br>
+			<p>Newsletter Format</p><br>
 
-			<label for="topics">Other topics you'd like to hear about</label>
-			<textarea id="topics"" name="user_topics"></textarea><br>
+			<div class="radio">
+
+				<input type="radio" id="html" name="user_format">
+				<label for="html">HTML</label>
+
+				<input type="radio" id="plaintext" name="user_format">
+				<label for="plaintext">Plain Text</label><br>
+
+			</div>
+
+			<label for="topics" class="topics-label">Other topics you'd like to hear about</label>
+			<textarea id="topics"" name="user_topics" placeholder="Enter your text here"></textarea><br>
 
 			<input type="submit" id="submit" value="Sign Up" class="button">
 
@@ -155,7 +164,7 @@
 
 	<footer class="main-footer">
 
-		<p>&copy; Copyright The Code Review</p>
+		<p>&copy; The Code Review</p>
 
 	</footer>
 
