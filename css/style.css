@@ -110,7 +110,12 @@ textarea {
   	display:  inline-block;
   	margin-bottom: 0;
   	vertical-align: middle; 
-  	width: 60px;
+  	/*width: 60px;*/
+}
+
+.checkbox label {
+	position: relative;
+	left: 45px;
 }
 
 .radio input,
@@ -168,7 +173,7 @@ select:focus {
 }
 
 #zipcode {
-	width: 25%;
+	width: 40%;
 }
 
 
@@ -184,8 +189,8 @@ select:focus {
 		width: 60%;
 	}
 
-	label {
-		
+	#zipcode {
+		width: 30%;
 	}
 
 
