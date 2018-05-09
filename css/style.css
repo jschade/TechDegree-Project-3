@@ -104,13 +104,16 @@ textarea {
 	padding-bottom: 40px;
 }
 
+.div1 {
+	margin: auto;
+	border-top: 3px dotted #5C4A72;
+	padding-top: 25px;
+}
+
 .checkbox input,
 .checkbox label {
-
   	display:  inline-block;
   	margin-bottom: 0;
-  	vertical-align: middle; 
-  	/*width: 60px;*/
 }
 
 .checkbox label {
@@ -189,6 +192,23 @@ select:focus {
 		width: 60%;
 	}
 
+/*	.div1 {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+
+	.div1 input,
+	select {
+		width: 80%;
+		justify-content: flex-end;
+	}
+
+	.div1 label {
+		width: 20%;
+	}
+*/
+	
 	#zipcode {
 		width: 30%;
 	}
