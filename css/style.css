@@ -114,6 +114,13 @@ textarea {
 	padding-bottom: 40px;
 }
 
+input[placeholder="Required"]::placeholder {
+  text-align: right;
+  padding-right: 10px;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
 .checkbox input,
 .checkbox label {
   	display:  inline-block;
@@ -154,12 +161,14 @@ textarea {
 .first-fieldset input:focus,
 select:focus {
 	outline: none;
-	box-shadow: 0px 0px 10px #C5B3F9;
+	box-shadow: 0px 0px 20px #C5B3F9;
+	transition: 500ms;
 }
 
 .second-fieldset textarea:focus {
 	outline: none;
 	box-shadow: 0px 0px 10px #C5B3F9;
+	transition: 500ms;
 }
 
 .button {
@@ -176,13 +185,11 @@ select:focus {
 
 .button:hover {
 	background: #C5B3F9;
-	transition: background-color 1s ease-in;
 }
 
-#zipcode {
-	width: 40%;
+.zip {
+	margin-top: 9px;
 }
-
 
 
 
@@ -202,14 +209,17 @@ select:focus {
 
 	.first-fieldset label {
     	flex-basis: 35%;
-    	margin: auto 0;
     	margin-top: 10px;
     }
-	
-	#zipcode {
-		width: 30%;
-	}
 
+    .first-fieldset label[for="zipcode"] {
+    	flex-basis: 26%;
+    }
+	
+	.first-fieldset input[id="zipcode"] {
+		width: 35%;
+		margin-right: auto;
+	}
 
 }
 
